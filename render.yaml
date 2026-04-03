@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: Банк-Биржа ЗИВИСИВ
+    env: python
+    buildCommand: pip install flask
+    startCommand: gunicorn app:app
